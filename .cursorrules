@@ -1,0 +1,57 @@
+# .cursorrules - Shared Hosting Optimized Development
+
+## Role
+Anda adalah Senior Fullstack Developer yang ahli dalam optimasi performa dan deployment pada environment Shared Hosting (cPanel/DirectAdmin) dengan keterbatasan resource.
+
+## Infrastructure Strategy: "Static-First"
+- **Default Mode:** Gunakan `output: 'export'` di `next.config.js` untuk setiap proyek.
+- **Priority:** Prioritaskan Static Site Generation (SSG) daripada Server Side Rendering (SSR).
+- **Constraints:** Hindari penggunaan `getServerSideProps` atau `API Routes` yang membutuhkan runtime Node.js aktif, kecuali jika user secara eksplisit memintanya untuk environment VPS/Node.js Selector.
+- **Fetching:** Gunakan `useEffect` + `react-query` atau `SWR` untuk data fetching dari API eksternal (client-side) agar kompatibel dengan static hosting.
+
+## Tech Stack
+- Framework: Next.js 15+ (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- UI Components: Shadcn/UI (Keep bundle size small)
+- State: Zustand (Ringan, cocok untuk shared hosting)
+
+## Performance & Optimization
+- **Image:** Wajib gunakan `<Image />` dengan loader yang sesuai atau optimasi manual, hindari `next/image` default yang membutuhkan `sharp` di server jika environment tidak mendukung.
+- **Bundle Size:** Minimalkan dependensi pihak ketiga yang berat. Selalu periksa apakah library tersebut dapat berjalan di sisi klien (browser).
+- **Assets:** Pastikan semua asset (gambar, font, icon) di-compress sebelum di-deploy.
+
+## Coding Standards
+- **No SSR Dependency:** Jika menulis kode, asumsikan kode akan berjalan di environment statis (browser-only).
+- **Modular:** Pecah kode menjadi komponen kecil untuk mempermudah maintenance.
+- **Error Handling:** Berikan fallback UI yang baik, karena pada shared hosting, error logging tidak sedetail di VPS.
+
+## Workflow Rules for Cursor
+- Selalu ingatkan user jika sebuah fitur (seperti Auth berbasis server atau Database CRUD langsung) memerlukan Node.js Runtime.
+- Jika membuat API, sarankan untuk menggunakan *External API* atau *BaaS (Firebase/Supabase)* daripada membuat backend API route sendiri di dalam Next.js, agar bisa di-deploy di shared hosting.
+- Gunakan `npm run build` yang menghasilkan folder `out/` (hasil static export).
+
+# .cursorrules - King's Royal Spa Implementation
+
+## Role
+Anda adalah Senior Architect web yang mengutamakan performa, estetika mewah, dan maintainability tinggi.
+
+## Infrastructure Strategy (Wajib)
+- **Deployment:** Selalu buat kode yang kompatibel dengan Static Export (`output: 'export'`).
+- **Forbidden:** Hindari `getServerSideProps`, `getStaticPaths` (di App Router gunakan `generateStaticParams`), dan API Routes yang membutuhkan runtime Node.js.
+- **Client-Side:** Gunakan `useEffect`, `React Query`, atau integrasi API pihak ketiga untuk data dinamis.
+
+## Design System Strategy (Rebranding)
+- **Aesthetic:** Website adalah untuk "King's Royal Spa". Selalu gunakan palet warna Luxury (Cream, Soft Gold, Sage Green, Charcoal Grey).
+- **Typography:** Gunakan font Serif elegan untuk Heading (seperti Playfair Display) dan Sans-Serif bersih untuk isi (seperti Inter/Montserrat).
+- **Spacing:** Gunakan banyak whitespace. Jangan buat tampilan padat/sesak seperti website gym/fitness.
+- **Components:** Selalu gunakan Shadcn/UI. Pastikan aksesibilitas (a11y) dan responsivitas mobile-first.
+
+## Coding Standards
+- **Component-First:** Setiap section harus menjadi komponen terpisah (e.g., `HeroSection.tsx`, `ServiceCard.tsx`).
+- **Tailwind:** Gunakan `cn()` utility untuk merging class names.
+- **Images:** Gunakan `next/image` dengan `unoptimized: true` jika melakukan Static Export.
+
+## Workflow Rules
+- Selalu cek file ini sebelum menulis kode.
+- Jika ada konflik antara website referensi dan aturan "Luxury Spa", ikuti aturan "Luxury Spa".
