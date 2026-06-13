@@ -59,6 +59,16 @@ export const siteConfig = {
       label: "Bekasi",
       href: "https://www.google.com/maps/place/King's+Royal+Spa+Bekasi/@-6.242947,106.9837323,15z/data=!3m1!4b1!4m6!3m5!1s0x2e698d001328885f:0xda23c7c6bca9cd81!8m2!3d-6.2429471!4d106.9940106!16s%2Fg%2F11wxbp251y?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
       videoSrc: "https://youtu.be/dWV4xxDR-DA?si=EzsPoGjWfcVwoG9N",
+      photos: [
+        "/lokasi/bekasi/photos/photo-01.png",
+        "/lokasi/bekasi/photos/photo-02.png",
+        "/lokasi/bekasi/photos/photo-03.png",
+        "/lokasi/bekasi/photos/photo-04.png",
+        "/lokasi/bekasi/photos/photo-05.png",
+        "/lokasi/bekasi/photos/photo-06.png",
+        "/lokasi/bekasi/photos/photo-07.png",
+        "/lokasi/bekasi/photos/photo-08.png",
+      ],
       social: {
         instagram: "https://www.instagram.com/kingsroyal_bekasi",
         tiktok: "https://www.tiktok.com/@kingsroyalbekasi",
@@ -69,6 +79,16 @@ export const siteConfig = {
       label: "Manado",
       href: "https://www.google.com/maps/place/ROYAL+MAN+%26+HEALTH+CLUB+SPA/@1.462625,124.8237211,15z/data=!3m1!4b1!4m6!3m5!1s0x3287753b60a9603d:0x2fc93a7561bbeea1!8m2!3d1.462625!4d124.8339994!16s%2Fg%2F11shsb7brw?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
       videoSrc: "https://www.youtube.com/watch?v=CtvhJOoJiUw",
+      photos: [
+        "/lokasi/manado/photos/photo-01.png",
+        "/lokasi/manado/photos/photo-02.png",
+        "/lokasi/manado/photos/photo-03.png",
+        "/lokasi/manado/photos/photo-04.png",
+        "/lokasi/manado/photos/photo-05.png",
+        "/lokasi/manado/photos/photo-06.png",
+        "/lokasi/manado/photos/photo-07.png",
+        "/lokasi/manado/photos/photo-08.png",
+      ],
       social: {
         instagram: "https://www.instagram.com/royalmanandhealthmanado/",
         tiktok: "https://www.tiktok.com/@royalspa_manado",
