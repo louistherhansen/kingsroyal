@@ -38,6 +38,11 @@ export type Messages = {
       description: string
       placeholder: string
     }
+    photo: {
+      eyebrow: string
+      title: string
+      description: string
+    }
     fasilitas: {
       eyebrow: string
       title: string
@@ -172,6 +177,11 @@ export const messages: Record<Locale, Messages> = {
         title: "Branch Video",
         description: "Watch the latest branch showcase and atmosphere.",
         placeholder: "Video area — add file or embed URL",
+      },
+      photo: {
+        eyebrow: "Photo",
+        title: "Photo",
+        description: "A glimpse of the atmosphere and experience at this branch.",
       },
       fasilitas: {
         eyebrow: "Facilities",
@@ -366,6 +376,11 @@ export const messages: Record<Locale, Messages> = {
         title: "Video Cabang",
         description: "Tonton video suasana terbaru dari cabang ini.",
         placeholder: "Area video — unggah file atau sematkan URL",
+      },
+      photo: {
+        eyebrow: "Photo",
+        title: "Photo",
+        description: "Cuplikan suasana dan pengalaman di cabang ini.",
       },
       fasilitas: {
         eyebrow: "Fasilitas",
@@ -567,6 +582,11 @@ export const messages: Record<Locale, Messages> = {
         description: "观看该门店最新环境与体验视频。",
         placeholder: "视频区域 — 上传文件或嵌入链接",
       },
+      photo: {
+        eyebrow: "照片",
+        title: "Photo",
+        description: "一览本门店的环境与体验氛围。",
+      },
       fasilitas: {
         eyebrow: "设施",
         title: "设施",
@@ -747,6 +767,11 @@ export const messages: Record<Locale, Messages> = {
         title: "지점 영상",
         description: "최근 지점 분위기와 경험을 영상으로 만나 보세요.",
         placeholder: "영상 영역 — 파일 업로드 또는 URL 삽입",
+      },
+      photo: {
+        eyebrow: "사진",
+        title: "Photo",
+        description: "이 지점의 분위기와 경험을 사진으로 만나 보세요.",
       },
       fasilitas: {
         eyebrow: "시설",
@@ -946,6 +971,11 @@ export const messages: Record<Locale, Messages> = {
         title: "فيديو الفرع",
         description: "شاهد أحدث عرض لأجواء الفرع.",
         placeholder: "منطقة الفيديو — أضف ملفًا أو عنوان رابط",
+      },
+      photo: {
+        eyebrow: "صور",
+        title: "Photo",
+        description: "لمحة عن أجواء وتجربة هذا الفرع.",
       },
       fasilitas: {
         eyebrow: "المرافق",

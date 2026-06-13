@@ -30,5 +30,11 @@ export default async function LokasiPage({ params }: Props) {
   if (!loc) {
     notFound()
   }
-  return <LocationBranchView label={loc.label} videoSrc={loc.videoSrc} />
+  return (
+    <LocationBranchView
+      label={loc.label}
+      videoSrc={loc.videoSrc}
+      photos={"photos" in loc ? loc.photos : undefined}
+    />
+  )
 }

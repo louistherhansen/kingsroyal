@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/components/providers/LanguageProvider"
+import { BranchPhotoSection } from "@/components/location/BranchPhotoSection"
 import { FacilitiesSection } from "@/components/sections/FacilitiesSection"
 import { HealthBenefitsSection } from "@/components/sections/HealthBenefitsSection"
 import { ServiceSection } from "@/components/sections/ServiceSection"
@@ -11,12 +12,14 @@ import { getYouTubeEmbedUrl } from "@/lib/youtube"
 export type LocationBranchViewProps = {
   label: string
   videoSrc?: string
+  photos?: readonly string[]
   className?: string
 }
 
 export function LocationBranchView({
   label,
   videoSrc,
+  photos,
   className,
 }: LocationBranchViewProps) {
   const { messages } = useLanguage()
@@ -74,6 +77,10 @@ export function LocationBranchView({
           )}
         </div>
       </SectionShell>
+
+      {photos && photos.length > 0 ? (
+        <BranchPhotoSection photos={photos} branchLabel={label} />
+      ) : null}
 
       <ServiceSection />
       <HealthBenefitsSection />
