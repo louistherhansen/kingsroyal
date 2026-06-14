@@ -1,29 +1,36 @@
 "use client"
 
 import { useLanguage } from "@/components/providers/LanguageProvider"
+import { BranchAddressSection } from "@/components/location/BranchAddressSection"
 import { BranchPhotoSection } from "@/components/location/BranchPhotoSection"
 import { FacilitiesSection } from "@/components/sections/FacilitiesSection"
 import { HealthBenefitsSection } from "@/components/sections/HealthBenefitsSection"
 import { ServiceSection } from "@/components/sections/ServiceSection"
 import { SectionShell } from "@/components/sections/SectionShell"
+import { isBranchSlug } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { getYouTubeEmbedUrl } from "@/lib/youtube"
 
 export type LocationBranchViewProps = {
+  slug: string
   label: string
   videoSrc?: string
   photos?: readonly string[]
+  mapHref?: string
   className?: string
 }
 
 export function LocationBranchView({
+  slug,
   label,
   videoSrc,
   photos,
+  mapHref,
   className,
 }: LocationBranchViewProps) {
   const { messages } = useLanguage()
   const b = messages.branch
+  const branchAddress = isBranchSlug(slug) ? b.address.locations[slug] : undefined
   const embedUrl = videoSrc ? getYouTubeEmbedUrl(videoSrc) : null
 
   return (
@@ -84,7 +91,14 @@ export function LocationBranchView({
 
       <ServiceSection />
       <HealthBenefitsSection />
-      <FacilitiesSection />
+      {!branchAddress ? <FacilitiesSection /> : null}
+      {branchAddress && mapHref ? (
+        <BranchAddressSection
+          slug={slug}
+          mapHref={mapHref}
+          branchLabel={label}
+        />
+      ) : null}
     </main>
   )
 }

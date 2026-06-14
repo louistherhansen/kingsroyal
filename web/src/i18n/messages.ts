@@ -43,6 +43,19 @@ export type Messages = {
       title: string
       description: string
     }
+    address: {
+      eyebrow: string
+      title: string
+      description: string
+      openInMaps: string
+      mapPlaceholder: string
+      locations: {
+        cempaka: string
+        "kebon-jeruk": string
+        bekasi: string
+        manado: string
+      }
+    }
     fasilitas: {
       eyebrow: string
       title: string
@@ -182,6 +195,23 @@ export const messages: Record<Locale, Messages> = {
         eyebrow: "Photo",
         title: "Photo",
         description: "A glimpse of the atmosphere and experience at this branch.",
+      },
+      address: {
+        eyebrow: "Address",
+        title: "Address",
+        description: "Visit us at our branch location.",
+        openInMaps: "Open in Google Maps",
+        mapPlaceholder: "Map unavailable — open the Google Maps link instead.",
+        locations: {
+          cempaka:
+            "Graha Mega Grosir, Block K.40, Jl. Sumur Batu Raya Cemp. Mas Timur No.8, RT.17/RW.8, Sumur Batu, Kemayoran, Central Jakarta, Jakarta 10640, Indonesia",
+          "kebon-jeruk":
+            "Graha Handaya 12, Jl. Perjuangan No.12 A, RT.1/RW.7, Kebon Jeruk, West Jakarta, Jakarta 11530, Indonesia",
+          bekasi:
+            "Mutiara Bekasi Center, Jl. Jenderal Ahmad Yani, RT.005/RW.002, Kayuringin Jaya, South Bekasi, Bekasi City, West Java 17144, Indonesia",
+          manado:
+            "Jl. Laut Aru No.71, Ranotana, Sario, Manado City, North Sulawesi 95116, Indonesia",
+        },
       },
       fasilitas: {
         eyebrow: "Facilities",
@@ -381,6 +411,23 @@ export const messages: Record<Locale, Messages> = {
         eyebrow: "Photo",
         title: "Photo",
         description: "Cuplikan suasana dan pengalaman di cabang ini.",
+      },
+      address: {
+        eyebrow: "Alamat",
+        title: "Alamat",
+        description: "Kunjungi cabang kami di lokasi berikut.",
+        openInMaps: "Buka di Google Maps",
+        mapPlaceholder: "Peta tidak tersedia — buka tautan Google Maps.",
+        locations: {
+          cempaka:
+            "Graha Mega Grosir, Blok K. 40, Jl. Sumur Batu Raya Cemp. Mas Timur No.8, RT.17/RW.8, Sumur Batu, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640",
+          "kebon-jeruk":
+            "Graha Handaya. 12, Jl. Perjuangan No.12 A, RT.1/RW.7, Kb. Jeruk, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530",
+          bekasi:
+            "Jl. Jenderal Ahmad Yani Nomer Ruko Mutiara Bekasi Center, RT.005/RW.002, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144",
+          manado:
+            "Jl. Laut Aru No.71, Ranotana, Kec. Sario, Kota Manado, Sulawesi Utara 95116",
+        },
       },
       fasilitas: {
         eyebrow: "Fasilitas",
@@ -587,6 +634,23 @@ export const messages: Record<Locale, Messages> = {
         title: "Photo",
         description: "一览本门店的环境与体验氛围。",
       },
+      address: {
+        eyebrow: "地址",
+        title: "地址",
+        description: "欢迎前往以下门店地址。",
+        openInMaps: "在 Google 地图中打开",
+        mapPlaceholder: "地图暂不可用 — 请使用 Google 地图链接。",
+        locations: {
+          cempaka:
+            "Graha Mega Grosir，K 座 40 号，Jl. Sumur Batu Raya Cemp. Mas Timur 8 号，RT.17/RW.8，Sumur Batu，Kemayoran 区，中雅加达，雅加达 10640，印度尼西亚",
+          "kebon-jeruk":
+            "Graha Handaya 12，Jl. Perjuangan 12A 号，RT.1/RW.7，Kebon Jeruk，西雅加达，雅加达 11530，印度尼西亚",
+          bekasi:
+            "Mutiara Bekasi Center，Jl. Jenderal Ahmad Yani，RT.005/RW.002，Kayuringin Jaya，南勿加泗，勿加泗市，西爪哇 17144，印度尼西亚",
+          manado:
+            "Jl. Laut Aru 71 号，Ranotana，Sario 区，万鸦老市，北苏拉威西 95116，印度尼西亚",
+        },
+      },
       fasilitas: {
         eyebrow: "设施",
         title: "设施",
@@ -772,6 +836,23 @@ export const messages: Record<Locale, Messages> = {
         eyebrow: "사진",
         title: "Photo",
         description: "이 지점의 분위기와 경험을 사진으로 만나 보세요.",
+      },
+      address: {
+        eyebrow: "주소",
+        title: "주소",
+        description: "아래 주소에서 지점을 방문해 보세요.",
+        openInMaps: "Google 지도에서 열기",
+        mapPlaceholder: "지도를 불러올 수 없습니다 — Google 지도 링크를 이용해 주세요.",
+        locations: {
+          cempaka:
+            "Graha Mega Grosir, K블록 40, Jl. Sumur Batu Raya Cemp. Mas Timur 8번, RT.17/RW.8, Sumur Batu, Kemayoran, 중앙 자카르타, 자카르타 10640, 인도네시아",
+          "kebon-jeruk":
+            "Graha Handaya 12, Jl. Perjuangan 12A번, RT.1/RW.7, Kebon Jeruk, 서부 자카르타, 자카르타 11530, 인도네시아",
+          bekasi:
+            "Mutiara Bekasi Center, Jl. Jenderal Ahmad Yani, RT.005/RW.002, Kayuringin Jaya, 남부 베카시, 베카시시, 서부 자바 17144, 인도네시아",
+          manado:
+            "Jl. Laut Aru 71번, Ranotana, Sario, 마나도시, 북술라웨시 95116, 인도네시아",
+        },
       },
       fasilitas: {
         eyebrow: "시설",
@@ -976,6 +1057,23 @@ export const messages: Record<Locale, Messages> = {
         eyebrow: "صور",
         title: "Photo",
         description: "لمحة عن أجواء وتجربة هذا الفرع.",
+      },
+      address: {
+        eyebrow: "العنوان",
+        title: "العنوان",
+        description: "زر فرعنا في العنوان التالي.",
+        openInMaps: "افتح في Google Maps",
+        mapPlaceholder: "الخريطة غير متاحة — استخدم رابط Google Maps.",
+        locations: {
+          cempaka:
+            "Graha Mega Grosir، المبنى K.40، Jl. Sumur Batu Raya Cemp. Mas Timur رقم 8، RT.17/RW.8، Sumur Batu، Kemayoran، جاكرتا الوسطى، جاكرتا 10640، Indonesia",
+          "kebon-jeruk":
+            "Graha Handaya 12، Jl. Perjuangan رقم 12A، RT.1/RW.7، Kebon Jeruk، جاكرتا الغربية، جاكرتا 11530، Indonesia",
+          bekasi:
+            "Mutiara Bekasi Center، Jl. Jenderal Ahmad Yani، RT.005/RW.002، Kayuringin Jaya، جنوب Bekasi، مدينة Bekasi، Jawa Barat 17144، Indonesia",
+          manado:
+            "Jl. Laut Aru رقم 71، Ranotana، Sario، مدينة Manado، Sulawesi Utara 95116، Indonesia",
+        },
       },
       fasilitas: {
         eyebrow: "المرافق",

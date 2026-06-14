@@ -9,7 +9,9 @@ export const siteConfig = {
     {
       slug: "cempaka",
       label: "Cempaka",
-      href: "https://www.google.com/maps/place/King's+Royal+Spa/@-6.1469951,106.8876097,13.21z/data=!4m6!3m5!1s0x2e69f52d6c5a2b65:0xa54c9b5371493652!8m2!3d-6.1636825!4d106.8750129!16s%2Fg%2F11k3rkrj77?authuser=0&entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D",
+      href: "https://www.google.com/maps/place/King's+Royal+Spa/@-6.1469951,106.8876097,13060m/data=!3m1!1e3!4m6!3m5!1s0x2e69f52d6c5a2b65:0xa54c9b5371493652!8m2!3d-6.1636286!4d106.87506!16s%2Fg%2F11k3rkrj77?authuser=0&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
+      address:
+        "Graha Mega Grosir, Blok K. 40, Jl. Sumur Batu Raya Cemp. Mas Timur No.8, RT.17/RW.8, Sumur Batu, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640",
       videoSrc: "https://www.youtube.com/watch?v=4HjFSbgsQMc",
       photos: [
         "/lokasi/cempaka/photos/photo-01.png",
@@ -33,7 +35,9 @@ export const siteConfig = {
     {
       slug: "kebon-jeruk",
       label: "Kebon Jeruk",
-      href: "https://www.google.com/maps/place/King%E2%80%99s+Royal+Man+%26+Health+Club/@-6.1912166,106.7564709,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f781a5e1f78b:0x59625250e33405e7!8m2!3d-6.1912166!4d106.7590512!16s%2Fg%2F11l5f89x4c?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      href: "https://www.google.com/maps/place/King%E2%80%99s+Royal+Man+%26+Health+Club/@-6.1912166,106.7590512,944m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e69f781a5e1f78b:0x59625250e33405e7!8m2!3d-6.1912166!4d106.7590512!16s%2Fg%2F11l5f89x4c?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
+      address:
+        "Graha Handaya. 12, Jl. Perjuangan No.12 A, RT.1/RW.7, Kb. Jeruk, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530",
       videoSrc: "https://www.youtube.com/watch?v=wQwxHNoy1KY",
       photos: [
         "/lokasi/kebon-jeruk/photos/photo-01.png",
@@ -57,7 +61,9 @@ export const siteConfig = {
     {
       slug: "bekasi",
       label: "Bekasi",
-      href: "https://www.google.com/maps/place/King's+Royal+Spa+Bekasi/@-6.242947,106.9837323,15z/data=!3m1!4b1!4m6!3m5!1s0x2e698d001328885f:0xda23c7c6bca9cd81!8m2!3d-6.2429471!4d106.9940106!16s%2Fg%2F11wxbp251y?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      href: "https://www.google.com/maps/place/King's+Royal+Spa+Bekasi/@-6.2429471,106.9940106,944m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e698d001328885f:0xda23c7c6bca9cd81!8m2!3d-6.2429471!4d106.9940106!16s%2Fg%2F11wxbp251y?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
+      address:
+        "Jl. Jenderal Ahmad Yani Nomer Ruko Mutiara Bekasi Center, RT.005/RW.002, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144",
       videoSrc: "https://youtu.be/dWV4xxDR-DA?si=EzsPoGjWfcVwoG9N",
       photos: [
         "/lokasi/bekasi/photos/photo-01.png",
@@ -77,7 +83,9 @@ export const siteConfig = {
     {
       slug: "manado",
       label: "Manado",
-      href: "https://www.google.com/maps/place/ROYAL+MAN+%26+HEALTH+CLUB+SPA/@1.462625,124.8237211,15z/data=!3m1!4b1!4m6!3m5!1s0x3287753b60a9603d:0x2fc93a7561bbeea1!8m2!3d1.462625!4d124.8339994!16s%2Fg%2F11shsb7brw?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
+      href: "https://www.google.com/maps/place/ROYAL+MAN+%26+HEALTH+CLUB+SPA/@1.462625,124.8339994,949m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3287753b60a9603d:0x2fc93a7561bbeea1!8m2!3d1.462625!4d124.8339994!16s%2Fg%2F11shsb7brw?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D",
+      address:
+        "Jl. Laut Aru No.71, Ranotana, Kec. Sario, Kota Manado, Sulawesi Utara 95116",
       videoSrc: "https://www.youtube.com/watch?v=CtvhJOoJiUw",
       photos: [
         "/lokasi/manado/photos/photo-01.png",
@@ -117,6 +125,12 @@ export const siteConfig = {
 
 export function getLocationBySlug(slug: string) {
   return siteConfig.locations.find((l) => l.slug === slug)
+}
+
+export type BranchSlug = (typeof siteConfig.locations)[number]["slug"]
+
+export function isBranchSlug(slug: string): slug is BranchSlug {
+  return siteConfig.locations.some((l) => l.slug === slug)
 }
 
 /** Instagram accounts per outlet (aligned with `locations` slugs). */

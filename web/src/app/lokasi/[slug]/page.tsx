@@ -32,9 +32,11 @@ export default async function LokasiPage({ params }: Props) {
   }
   return (
     <LocationBranchView
+      slug={slug}
       label={loc.label}
       videoSrc={loc.videoSrc}
       photos={"photos" in loc ? loc.photos : undefined}
+      mapHref={loc.href}
     />
   )
 }
