@@ -210,9 +210,7 @@ export function HeroSection({
               transform: idx === active ? "scale(1.04)" : "scale(1)",
             }}
             className={cn(
-              "object-cover transition-[opacity,transform] duration-1000 ease-out will-change-transform transform-gpu",
-              // Crop down to reduce any reference header/logo artifacts in the source images.
-              "object-[50%_78%]",
+              "object-cover object-center transition-[opacity,transform] duration-1000 ease-out will-change-transform transform-gpu",
               "opacity-0"
             )}
           />

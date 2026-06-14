@@ -1,4 +1,3 @@
-import { FacilitiesSection } from "@/components/sections/FacilitiesSection"
 import { HealthBenefitsSection } from "@/components/sections/HealthBenefitsSection"
 import { HeroSection } from "@/components/sections/HeroSection"
 import { ServiceSection } from "@/components/sections/ServiceSection"
@@ -11,9 +10,10 @@ export default function Home() {
       <HeroSection
         slides={[
           "/slider/_MG_5663.JPG",
-          "/slider/_MG_5674.JPG",
-          "/slider/SLIDE-1.jpeg",
-          "/slider/_MG_5715.JPG",
+          "/slider/hero-branch-01.png",
+          "/slider/hero-branch-02.png",
+          "/slider/hero-branch-03.png",
+          "/slider/hero-branch-04.png",
         ]}
         autoPlayMs={4500}
         pauseAfterInteractionMs={6000}
@@ -21,7 +21,6 @@ export default function Home() {
       <VideoReviewSection src="https://www.youtube.com/watch?v=cJUze_WRzTU" />
       <ServiceSection />
       <HealthBenefitsSection />
-      <FacilitiesSection />
       <TestimonialSection videoSrc="https://www.youtube.com/watch?v=cqWCx__Ox9M" />
     </main>
   )
